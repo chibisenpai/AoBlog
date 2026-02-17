@@ -1,0 +1,32 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import { Image } from 'astro:assets';
+import coffeeimage from '../assets/coffee.gif';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Hello, Proxies</h1>
+      <p> "Welcome to aoblog this blog will includes my personal experiences with life, including mostly tech relateas I am a junior I.T technichian, Anyways dont worry I will also include multiple non cs field related stuff how ever currently I would mass dump my it related stuff into this" (&gt;-&lt;)/. </p>
+      <Image src={coffeeimage} alt="coffe" style="width: 740px"/>
+      <h3>This blog we will be discussing</h2>
+      <ul>
+        <li>Arch Linux</li>
+        <li>Fun Setup Stuff</li>
+        <li>Adventures</li>
+        <li>fun tips</li>
+        <li>and something :)</li>
+      </ul>
+		</main>
+		</footer>/>
+	</body>
+</html>
